@@ -1,0 +1,150 @@
+.services {
+  position: relative;
+  padding-top: 105px;
+  padding-bottom: 201px;
+  text-align: center;
+}
+
+.services__subtitle {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $main-text-color;
+}
+
+.services__title {
+  margin-bottom: 66px;
+  font-family: $font-family-title, serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.28;
+  text-transform: capitalize;
+  color: $title-text-color;
+}
+
+.services__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 267px;
+  border-radius: 36px;
+  background-color: $background-color;
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+      0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+      0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+      0px 20px 13px rgba(0, 0, 0, 0.01),
+      0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+      0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+
+    .services--decope-square--large {
+      opacity: 1;
+    }
+  }
+}
+
+.services__item-title {
+  margin-bottom: 15px;
+  font-family: $font-family-subtitle, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.35;
+  color: $subtitle-text-color;
+}
+
+.services__item-subtitle {
+  padding: 0 42px 45px 44px;
+  font-weight: 500;
+  line-height: 1.62;
+}
+
+.services__icon-satellite {
+  width: 66px;
+  height: 70px;
+  z-index: 2;
+}
+
+.services__icon-plane {
+  width: 167px;
+  height: 153px;
+  z-index: 2;
+}
+
+.services__icon-microphone {
+  width: 40px;
+  height: 69px;
+  z-index: 2;
+}
+
+.services__icon-settings {
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+}
+
+.services__icon-wrapper {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.services--decope-square {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: $decore-square;
+  z-index: 1;
+  border-radius: 18px 5px 10px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+
+  .services__item:nth-of-type(1) .services__icon-wrapper & {
+    bottom: 35px;
+    right: -25px;
+    transform: rotate(-180deg);
+  }
+
+  .services__item:nth-of-type(2) .services__icon-wrapper & {
+    top: 40px;
+    left: 40px;
+  }
+  .services__item:nth-of-type(3) .services__icon-wrapper & {
+    top: 35px;
+    left: 15px;
+  }
+  .services__item:nth-of-type(4) .services__icon-wrapper & {
+    bottom: 35px;
+    right: -25px;
+  }
+}
+
+.services__decore-plus {
+  position: absolute;
+  top: 105px;
+  right: -31px;
+}
+
+.services--decope-square--large {
+  position: absolute;
+  bottom: -33px;
+  left: -35px;
+  width: 100px;
+  height: 100px;
+  background: $accent-second-color;
+  border-radius: 30px 0px 10px;
+  z-index: -10;
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+}
