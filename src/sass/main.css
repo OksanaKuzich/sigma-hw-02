@@ -4,8 +4,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #5e6282;
-  background-image: url("../images/hero-decore.png");
-  background-repeat: no-repeat;
 }
 
 h1,
@@ -37,10 +35,13 @@ button {
   padding: 0;
   border-style: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .container {
-  width: 1160px;
+  width: 1440px;
+  padding-left: 141px;
+  padding-right: 91px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -57,6 +58,7 @@ button {
   color: #212832;
   font-size: 17px;
   font-family: Google Sans;
+  font-weight: 500;
 }
 
 .header__logo {
@@ -108,6 +110,7 @@ button {
 }
 
 .header__btn--login {
+  font-weight: 500;
   -webkit-transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -122,6 +125,7 @@ button {
   padding: 9px 21px;
   outline: 1px #000 solid;
   border-radius: 5px;
+  font-weight: 500;
   -webkit-transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -132,13 +136,18 @@ button {
 }
 
 .header__select--lang {
+  font-weight: 500;
   background-color: transparent;
   border-style: none;
 }
 
 .hero {
-  position: relative;
-  padding-left: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hero__subtitle {
@@ -152,6 +161,7 @@ button {
 }
 
 .hero__title {
+  width: 545px;
   margin-bottom: 30px;
   font-family: Volkhov, serif;
   font-weight: 700;
@@ -243,12 +253,33 @@ button {
   color: #686d77;
 }
 
+.wrapper-img {
+  position: relative;
+  width: 784px;
+  height: 764px;
+}
+
 .hero__img {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 15px;
   width: 784px;
   height: 764px;
+}
+
+.hero__icon-plane {
+  position: absolute;
+}
+
+.hero__icon-plane:nth-of-type(1) {
+  top: 50px;
+  left: -80px;
+}
+
+.hero__icon-plane:nth-of-type(2) {
+  top: 110px;
+  right: -60px;
+  z-index: -1;
 }
 
 .visually-hidden {

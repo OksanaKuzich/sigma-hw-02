@@ -26,48 +26,64 @@
     <title>Jadoo</title>
   </head>
   <body>
-    <header class="container header">
-      <a href="./index.html">
-        <svg class="header__logo">
-          <use href="./images/sprite.svg#logo-color"></use>
-        </svg>
-      </a>
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="header__nav-item"><a href="">Desitnations</a></li>
-          <li class="header__nav-item"><a href="">Hotels</a></li>
-          <li class="header__nav-item"><a href="">Flights</a></li>
-          <li class="header__nav-item"><a href="">Bookings</a></li>
-        </ul>
-      </nav>
-        <button class="header__btn--login type="button">Login</button>
+    <header>
+      <div class="container header">
+        <a href="./index.html">
+          <svg class="header__logo">
+            <use href="./images/sprite.svg#logo-color"></use>
+          </svg>
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="">Desitnations</a></li>
+            <li class="header__nav-item"><a href="">Hotels</a></li>
+            <li class="header__nav-item"><a href="">Flights</a></li>
+            <li class="header__nav-item"><a href="">Bookings</a></li>
+          </ul>
+        </nav>
+        <button class="header__btn--login" type="button">Login</button>
         <button class="header__btn--singup" type="button">Sign up</button>
-      <select class="header__select--lang" name="language">
-        <option value="EN">EN</option>
-        <option value="UA">UA</option>
-      </select>
+        <select class="header__select--lang" name="language">
+          <option value="EN">EN</option>
+          <option value="UA">UA</option>
+        </select>
+      </div>
     </header>
     <main>
-      <section  class="container hero">
-        <div class="hero__content">
-        <p class="hero__subtitle">Best Destinations around the world</p>
-        <h1 class="hero__title">Travel, enjoy and live a new and full life</h1>
-        <p class="hero__text">
-          Built Wicket longer admire do barton vanity itself do in it. Preferred
-          to sportsmen it engrossed listening. Park gate sell they west hard for
-          the.
-        </p>
-        <div class="hero__btn">
-        <button class="hero__btn--find" type="button">Find out more</button>
-        <button class="hero__btn--demo" type="button">
-            <svg class="hero__icon-play">
-              <use href="./images/sprite.svg#icon-play"></use>
+      <section>
+        <div class="container hero">
+          <div class="hero__content">
+            <p class="hero__subtitle">Best Destinations around the world</p>
+            <h1 class="hero__title">
+              Travel, enjoy and live a new and full life
+            </h1>
+            <p class="hero__text">
+              Built Wicket longer admire do barton vanity itself do in it.
+              Preferred to sportsmen it engrossed listening. Park gate sell they
+              west hard for the.
+            </p>
+            <div class="hero__btn">
+              <button class="hero__btn--find" type="button">
+                Find out more
+              </button>
+              <button class="hero__btn--demo" type="button">
+                <svg class="hero__icon-play">
+                  <use href="./images/sprite.svg#icon-play"></use>
+                </svg>
+              </button>
+              <p class="hero--demo-text">Play Demo</p>
+            </div>
+          </div>
+          <div class="wrapper-img">
+            <img class="hero__img" src="./images/hero.png" />
+            <svg class="hero__icon-plane">
+              <use href="./images/sprite.svg#icon-plane"></use>
             </svg>
-    </button>
-    <p class="hero--demo-text">Play Demo</p>
-    </div>
+            <svg class="hero__icon-plane">
+              <use href="./images/sprite.svg#icon-plane"></use>
+            </svg>
+          </div>
         </div>
-        <img class="hero__img" src="./images/hero.png">
       </section>
       <section>
         <p>CATEGORY</p>
