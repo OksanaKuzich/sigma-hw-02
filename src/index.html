@@ -26,24 +26,23 @@
     <title>Jadoo</title>
   </head>
   <body>
-    <header>
+    <header class="container header">
       <a href="./index.html">
-        <svg>
-          <use href="./images/logo-color.svg"></use>
+        <svg class="header__logo">
+          <use href="./images/sprite.svg#logo-color"></use>
         </svg>
       </a>
-      <p></p>
-      <nav>
-        <ul>
-          <li><a href="">Desitnations</a></li>
-          <li><a href="">Hotels</a></li>
-          <li><a href="">Flights</a></li>
-          <li><a href="">Bookings</a></li>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="">Desitnations</a></li>
+          <li class="header__nav-item"><a href="">Hotels</a></li>
+          <li class="header__nav-item"><a href="">Flights</a></li>
+          <li class="header__nav-item"><a href="">Bookings</a></li>
         </ul>
       </nav>
-      <button type="button">Login</button>
-      <button type="button">Sign up</button>
-      <select name="language">
+        <button class="header__btn--login type="button">Login</button>
+        <button class="header__btn--singup" type="button">Sign up</button>
+      <select class="header__select--lang" name="language">
         <option value="EN">EN</option>
         <option value="UA">UA</option>
       </select>

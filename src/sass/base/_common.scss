@@ -3,22 +3,7 @@
 body {
   background-color: $background-color;
   font-family: $font-family-main, sans-serif;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: $second-text-color;
-}
-
-.link {
-  text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    color: $accent-text-color;
-  }
-}
-
-.list {
-  display: flex;
+  font-weight: 400;
+  font-size: 16px;
+  color: $main-text-color;
 }
