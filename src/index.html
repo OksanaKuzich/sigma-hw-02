@@ -48,16 +48,26 @@
       </select>
     </header>
     <main>
-      <section>
-        <p>Best Destinations around the world</p>
-        <h1>Travel, enjoy and live a new and full life</h1>
-        <p>
+      <section  class="container hero">
+        <div class="hero__content">
+        <p class="hero__subtitle">Best Destinations around the world</p>
+        <h1 class="hero__title">Travel, enjoy and live a new and full life</h1>
+        <p class="hero__text">
           Built Wicket longer admire do barton vanity itself do in it. Preferred
           to sportsmen it engrossed listening. Park gate sell they west hard for
           the.
         </p>
-        <button type="button">Find out more</button>
-        <button type="button">Play Demo</button>
+        <div class="hero__btn">
+        <button class="hero__btn--find" type="button">Find out more</button>
+        <button class="hero__btn--demo" type="button">
+            <svg class="hero__icon-play">
+              <use href="./images/sprite.svg#icon-play"></use>
+            </svg>
+    </button>
+    <p class="hero--demo-text">Play Demo</p>
+    </div>
+        </div>
+        <img class="hero__img" src="./images/hero.png">
       </section>
       <section>
         <p>CATEGORY</p>
@@ -181,7 +191,7 @@
     <footer>
       <a href="./index.html">
         <svg>
-          <use href="./images/logo-color.svg"></use>
+          <use href="./images/sprite.svg#logo-color"></use>
         </svg>
       </a>
       <p>Book your trip in minute, get full Control for much longer.</p>
