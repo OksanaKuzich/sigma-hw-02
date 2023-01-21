@@ -1,7 +1,7 @@
 .services {
   position: relative;
   padding-top: 105px;
-  padding-bottom: 201px;
+  padding-bottom: 156px;
   text-align: center;
 }
 
@@ -11,6 +11,7 @@
   font-size: 18px;
   line-height: 1.5;
   color: $main-text-color;
+  text-transform: capitalize;
 }
 
 .services__title {
@@ -19,7 +20,6 @@
   font-weight: 700;
   font-size: 50px;
   line-height: 1.28;
-  text-transform: capitalize;
   color: $title-text-color;
 }
 
