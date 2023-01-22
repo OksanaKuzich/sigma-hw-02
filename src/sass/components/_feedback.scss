@@ -1,0 +1,66 @@
+.feedback {
+  padding-left: 186px;
+  margin-bottom: 173px;
+  display: flex;
+  gap: 87px;
+}
+
+.feedback__subtitle {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.feedback__title {
+  width: 409px;
+  font-family: $font-family-title, serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.28;
+  text-transform: capitalize;
+  color: $title-text-color;
+}
+
+.feedback__card {
+  position: relative;
+  padding: 28px 68px 34px 34px;
+  width: 504px;
+  background: $background-color;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+    0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+    0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+    0px 20px 13px rgba(0, 0, 0, 0.01),
+    0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+    0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 10px;
+}
+
+.feedback__card-img {
+  position: absolute;
+  top: -34px;
+  left: -34px;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+}
+
+.feedback__card-context {
+  margin-bottom: 34px;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.feedback__card-name {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.feedback__card-city {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+}
