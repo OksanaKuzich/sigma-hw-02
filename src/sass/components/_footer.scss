@@ -1,5 +1,6 @@
 .footer {
   padding: 113px 194px 79px 186px;
+  position: relative;
 }
 
 .footer__group {
@@ -153,4 +154,10 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.24;
+}
+
+.footer__decore {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }

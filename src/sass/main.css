@@ -108,7 +108,7 @@ button {
   margin-left: 52px;
   margin-right: 40px;
   padding: 9px 21px;
-  outline: 1px #000 solid;
+  border: 1px #000 solid;
   border-radius: 5px;
   font-weight: 500;
   transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -260,8 +260,7 @@ button {
 
 .services {
   position: relative;
-  padding-top: 105px;
-  padding-bottom: 156px;
+  padding: 105px 155px 156px 110px;
   text-align: center;
 }
 
@@ -295,6 +294,7 @@ button {
   align-items: center;
   justify-content: space-between;
   width: 267px;
+  height: 314px;
   border-radius: 36px;
   background-color: #fff;
   transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -383,7 +383,7 @@ button {
 .services__decore-plus {
   position: absolute;
   top: 105px;
-  right: -31px;
+  right: 0;
 }
 
 .services--decope-square--large {
@@ -402,10 +402,12 @@ button {
 .destinations {
   position: relative;
   text-align: center;
+  padding: 0 227px 0 173px;
 }
 
 .destinations > .services__subtitle {
   text-transform: none;
+  margin-bottom: 8px;
 }
 
 .destinations > .services__title {
@@ -415,7 +417,6 @@ button {
 .destinations__list {
   display: flex;
   margin-bottom: 186px;
-  justify-content: space-around;
 }
 
 .destinations__item {
@@ -470,7 +471,7 @@ button {
 .destinations__img-decore {
   position: absolute;
   top: 330px;
-  right: 55px;
+  right: 165px;
   z-index: -1;
 }
 
@@ -880,6 +881,7 @@ button {
 
 .footer {
   padding: 113px 194px 79px 186px;
+  position: relative;
 }
 
 .footer__group {
@@ -1011,6 +1013,12 @@ button {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.24;
+}
+
+.footer__decore {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .visually-hidden {

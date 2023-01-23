@@ -1,10 +1,12 @@
 .destinations {
   position: relative;
   text-align: center;
+  padding: 0 227px 0 173px;
 }
 
 .destinations > .services__subtitle {
   text-transform: none;
+  margin-bottom: 8px;
 }
 
 .destinations > .services__title {
@@ -14,7 +16,6 @@
 .destinations__list {
   display: flex;
   margin-bottom: 186px;
-  justify-content: space-around;
 }
 
 .destinations__item {
@@ -75,6 +76,6 @@
 .destinations__img-decore {
   position: absolute;
   top: 330px;
-  right: 55px;
+  right: 165px;
   z-index: -1;
 }
