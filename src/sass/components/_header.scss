@@ -9,10 +9,14 @@
   font-weight: 500;
 }
 
+.header__link-logo {
+  width: 116px;
+  margin-right: 222px;
+}
+
 .header__logo {
   width: 116px;
   height: 35px;
-  margin-right: 222px;
   transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
