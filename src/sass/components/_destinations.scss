@@ -1,7 +1,7 @@
 .destinations {
   position: relative;
   text-align: center;
-  padding: 0 227px 0 173px;
+  padding: 0 227px 186px 173px;
 }
 
 .destinations > .services__subtitle {
@@ -15,18 +15,20 @@
 
 .destinations__list {
   display: flex;
-  margin-bottom: 186px;
+  justify-content: space-between;
 }
 
 .destinations__item {
   position: relative;
   width: 315px;
+  transition: all 700ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:nth-of-type(1) {
-    margin-right: 35px;
-  }
-  &:nth-of-type(2) {
-    margin-right: 60px;
+  &:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.03))
+      drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.1))
+      drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.02))
+      drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01))
   }
 }
 

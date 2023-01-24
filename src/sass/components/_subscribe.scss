@@ -1,12 +1,10 @@
 .subscribe {
-  padding-top: 111px;
-  padding-left: 158px;
-  padding-bottom: 83px;
+  padding: 124px 135px 83px 135px;
 }
 
 .subscribe__form {
   position: relative;
-  padding: 92px 178px 65px 133px;
+  padding: 79px 155px 78px 156px;
   width: 1170px;
   background: rgba(223, 215, 249, 0.2);
   //   opacity: 0.2;
@@ -14,7 +12,7 @@
 }
 
 .subscribe__form-title {
-  margin-bottom: 77px;
+  margin-bottom: 74px;
   text-align: center;
   font-weight: 600;
   font-size: 33px;
@@ -29,11 +27,11 @@
 
 .subscribe__form-label {
   position: relative;
+  margin-right: 24px;
 }
 
 .subscribe__form-input {
   padding-left: 66px;
-  margin-right: 24px;
   width: 421px;
   height: 68px;
   font-family: $font-family-input;
@@ -46,6 +44,7 @@
 }
 
 .subscribe__form-btn {
+  position: relative;
   padding: 22px 50px 23px 50px;
   font-family: $font-family-subtitle, sans-serif;
   font-weight: 600;
@@ -55,6 +54,27 @@
   color: $background-color;
   background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
   border-radius: 10px;
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #ffbba2 0%, #fc4225 100%);
+    z-index: -1;
+    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
 }
 
 .subscribe__form-icon {
@@ -67,8 +87,8 @@
 
 .form__decore-plus {
   position: absolute;
-  bottom: -83px;
-  right: -76px;
+  bottom: -70px;
+  right: -99px;
   width: 153px;
   height: 166px;
 }
@@ -79,8 +99,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 0;
-  right: 3px;
+  top: -13px;
+  right: -20px;
   width: 70px;
   height: 70px;
   border-radius: 50%;
