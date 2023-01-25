@@ -127,6 +127,7 @@
 
 .form__decore-plus {
   display: none;
+
   @media screen and (min-width: 1024px) {
     display: block;
     position: absolute;
@@ -164,8 +165,8 @@
   display: none;
 
   @media screen and (min-width: 768px) {
-    display: block;
     position: absolute;
+    display: block;
     bottom: 0;
     left: -80px;
     z-index: -1;

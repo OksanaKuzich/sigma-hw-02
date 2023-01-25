@@ -1,23 +1,16 @@
 .hero {
+  position: relative;
   padding-top: 112px;
   padding-bottom: 117px;
-  position: relative;
 
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     justify-content: center;
   }
-
   @media screen and (min-width: 1024px) {
     display: flex;
     flex-direction: row;
   }
 }
-
-// .hero__content {
-//   @media screen and (min-width: 768px) {
-//     width: 547px;
-//   }
-// }
 
 .hero__subtitle {
   margin-bottom: 24px;
@@ -27,6 +20,7 @@
   line-height: 1.5;
   text-transform: uppercase;
   color: $accent-second-color;
+
   @media screen and (min-width: 480px) {
     font-size: 20px;
   }
@@ -77,6 +71,7 @@
   margin-bottom: 34px;
   font-weight: 500;
   line-height: 1.88;
+
   @media screen and (min-width: 480px) {
     width: 477px;
   }
@@ -197,14 +192,16 @@
       @media screen and (min-width: 1440px) {
         animation-name: movePlane;
         animation-duration: 3000ms;
-        // animation-timing-function: linear;
-        // animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
       }
     }
   }
 
   &:nth-of-type(2) {
     display: none;
+
     @media screen and (min-width: 1024px) {
       display: block;
       top: 0px;

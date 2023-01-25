@@ -45,9 +45,9 @@ button {
   max-width: 1440px;
   padding-left: 25px;
   padding-right: 10px;
-  font-size: 16px;
   margin-left: auto;
   margin-right: auto;
+  font-size: 16px;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
@@ -63,12 +63,12 @@ button {
 }
 
 .header {
-  padding-top: 20px;
-  padding-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 15px;
   font-family: Google Sans;
   font-weight: 500;
@@ -199,10 +199,11 @@ button {
   background-color: transparent;
   border-style: none;
 }
+
 .hero {
+  position: relative;
   padding-top: 112px;
   padding-bottom: 117px;
-  position: relative;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .hero {
@@ -407,6 +408,12 @@ button {
             animation-name: movePlane;
     -webkit-animation-duration: 3000ms;
             animation-duration: 3000ms;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
   }
 }
 .hero__icon-plane:nth-of-type(2) {
@@ -609,8 +616,8 @@ button {
 }
 @media screen and (min-width: 768px) {
   .services__decore-plus {
-    display: block;
     position: absolute;
+    display: block;
     top: 105px;
     right: 0;
     z-index: -1;
@@ -642,8 +649,8 @@ button {
 }
 
 .destinations > .services__subtitle {
-  text-transform: none;
   margin-bottom: 8px;
+  text-transform: none;
 }
 
 .destinations > .services__title {
@@ -691,12 +698,12 @@ button {
   position: absolute;
   display: flex;
   justify-content: space-between;
-  width: 100%;
   bottom: 0;
   right: 0;
   padding: 27px 10px 42px 10px;
   background: #fff;
   border-radius: 0px 0px 24px 24px;
+  width: 100%;
 }
 @media screen and (min-width: 1440px) {
   .destinations__card-wrapper {
@@ -705,11 +712,11 @@ button {
 }
 
 .destinations__card-name {
+  margin-bottom: 19px;
   text-align: left;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.24;
-  margin-bottom: 19px;
 }
 
 .destinations__card-duration {
@@ -720,9 +727,9 @@ button {
 }
 
 .destinations__icon {
+  margin-right: 14px;
   width: 20px;
   height: 20px;
-  margin-right: 14px;
 }
 
 .destinations__img-decore {
@@ -829,10 +836,10 @@ button {
 }
 @media screen and (min-width: 1024px) {
   .steps__card {
-    margin-top: 0;
     position: absolute;
     bottom: 14px;
     left: 0;
+    margin-top: 0;
   }
 }
 
@@ -885,13 +892,13 @@ button {
 }
 
 .steps__card-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 36px;
   height: 36px;
   background: #f5f5f5;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .steps__card-icon {
@@ -910,7 +917,6 @@ button {
 }
 @media screen and (min-width: 1440px) {
   .steps__small-card {
-    display: block;
     position: absolute;
     bottom: 66px;
     right: -5px;
@@ -1000,9 +1006,9 @@ button {
 }
 
 .feedback {
+  display: flex;
   padding-bottom: 100px;
   padding-top: 100px;
-  display: flex;
   flex-wrap: wrap;
   gap: 70px;
 }
@@ -1053,8 +1059,8 @@ button {
   padding: 28px 68px 34px 34px;
   width: 504px;
   background: #fff;
-  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
   border-radius: 10px;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
 }
 
 .feedback__card-img {
@@ -1117,10 +1123,10 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 190px;
-  height: 86px;
   padding-left: 40px;
   padding-right: 40px;
+  width: 190px;
+  height: 86px;
   text-align: center;
   transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1322,8 +1328,8 @@ button {
 }
 @media screen and (min-width: 768px) {
   .form__decore-circles1 {
-    display: block;
     position: absolute;
+    display: block;
     bottom: 0;
     left: -80px;
     z-index: -1;
@@ -1338,9 +1344,9 @@ button {
 }
 
 .footer {
+  position: relative;
   padding-top: 100px;
   padding-bottom: 100px;
-  position: relative;
 }
 @media screen and (min-width: 1440px) {
   .footer {
@@ -1508,7 +1514,7 @@ button {
 }
 
 .footer_email {
-  text-align: feft;
+  text-align: left;
   margin-top: 84px;
   font-weight: 500;
   font-size: 14px;
