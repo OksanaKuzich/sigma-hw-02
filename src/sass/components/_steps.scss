@@ -13,11 +13,18 @@
     padding-bottom: 200px;
     padding-left: 186px;
   }
+  @media screen and (max-width: 1023px) {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .steps .services__subtitle {
   text-transform: none;
   margin-bottom: 15px;
+  @media screen and (max-width: 1024px) {
+    text-align: center;
+  }
 }
 
 .steps .services__title {
@@ -28,6 +35,9 @@
 
   @media screen and (min-width: 1024px) {
     width: 545px;
+  }
+  @media screen and (max-width: 1024px) {
+    text-align: center;
   }
 }
 

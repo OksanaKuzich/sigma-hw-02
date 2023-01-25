@@ -1,11 +1,17 @@
 .footer {
-  padding: 113px 194px 79px 186px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   position: relative;
+
+  @media screen and (min-width: 1440px) {
+    padding: 113px 194px 79px 186px;
+  }
 }
 
 .footer__group {
   display: flex;
   gap: 82px;
+  flex-wrap: wrap;
 }
 
 .footer__link-logo {
@@ -28,14 +34,22 @@
 
 .footer__menu {
   display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+
+  @media screen and (min-width: 1440px) {
+    gap: 0;
+  }
 }
 
-.footer__menu-item {
-  &:first-child {
-    margin-right: 72px;
-  }
-  &:last-child {
-    margin-left: 91px;
+@media screen and (min-width: 1440px) {
+  .footer__menu-item {
+    &:first-child {
+      margin-right: 72px;
+    }
+    &:last-child {
+      margin-left: 91px;
+    }
   }
 }
 
@@ -179,11 +193,15 @@
 }
 
 .footer_email {
-  text-align: center;
+  text-align: feft;
   margin-top: 84px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.24;
+
+  @media screen and (min-width: 1440px) {
+    text-align: center;
+  }
 }
 
 .footer__decore {

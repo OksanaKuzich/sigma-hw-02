@@ -157,10 +157,15 @@
 }
 
 .services__decore-plus {
-  position: absolute;
-  top: 105px;
-  right: 0;
-  z-index: -1;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 105px;
+    right: 0;
+    z-index: -1;
+  }
 }
 
 .services--decope-square--large {

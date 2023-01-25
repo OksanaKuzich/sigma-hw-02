@@ -1,38 +1,68 @@
 .subscribe {
-  padding: 124px 135px 83px 135px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @media screen and (min-width: 1440px) {
+    padding: 124px 135px 83px 135px;
+  }
 }
 
 .subscribe__form {
   position: relative;
-  padding: 79px 155px 78px 156px;
-  width: 1170px;
+  padding: 50px;
+  max-width: 1170px;
   background: rgba(223, 215, 249, 0.2);
-  //   opacity: 0.2;
   border-radius: 129px 20px 20px 20px;
+
+  @media screen and (min-width: 1440px) {
+    padding: 79px 155px 78px 156px;
+    max-width: 1170px;
+  }
 }
 
 .subscribe__form-title {
   margin-bottom: 74px;
   text-align: center;
   font-weight: 600;
-  font-size: 33px;
+  font-size: 25px;
   line-height: 1.64;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 33px;
+  }
 }
 
 .form__el-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  gap: 20px;
+  align-items: center;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-left: 96px;
+    justify-content: flex-start;
+  }
 }
 
 .subscribe__form-label {
   position: relative;
-  margin-right: 24px;
+  width: 100%;
+
+  @media screen and (min-width: 1024px) {
+    margin-right: 24px;
+    width: 421px;
+  }
 }
 
 .subscribe__form-input {
   padding-left: 66px;
-  width: 421px;
+  width: 100%;
   height: 68px;
   font-family: $font-family-input;
   font-size: 14px;
@@ -41,11 +71,16 @@
   background: $background-color;
   border: none;
   border-radius: 10px;
+
+  @media screen and (min-width: 1024px) {
+    width: 421px;
+  }
 }
 
 .subscribe__form-btn {
   position: relative;
-  padding: 22px 50px 23px 50px;
+  padding: 20px;
+  max-width: 150px;
   font-family: $font-family-subtitle, sans-serif;
   font-weight: 600;
   font-size: 17px;
@@ -75,6 +110,11 @@
   &:hover::before {
     opacity: 1;
   }
+
+  @media screen and (min-width: 1024px) {
+    padding: 22px 50px 23px 50px;
+    max-width: 180px;
+  }
 }
 
 .subscribe__form-icon {
@@ -86,11 +126,19 @@
 }
 
 .form__decore-plus {
-  position: absolute;
-  bottom: -70px;
-  right: -99px;
-  width: 153px;
-  height: 166px;
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: block;
+    position: absolute;
+    bottom: -60px;
+    right: -60px;
+    width: 153px;
+    height: 166px;
+  }
+  @media screen and (min-width: 1440px) {
+    bottom: -70px;
+    right: -99px;
+  }
 }
 
 .form__decore-btn {
@@ -105,13 +153,23 @@
   height: 70px;
   border-radius: 50%;
   background: linear-gradient(201.65deg, #747def 10.27%, #5e3be1 100%);
+
+  @media screen and (max-width: 479px) {
+    top: -20px;
+    right: 0;
+  }
 }
 
 .form__decore-circles1 {
-  position: absolute;
-  bottom: 0;
-  left: -80px;
-  z-index: -1;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -80px;
+    z-index: -1;
+  }
 }
 
 .form__decore-circles2 {
