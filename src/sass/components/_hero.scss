@@ -1,63 +1,105 @@
 .hero {
-  display: flex;
-  justify-content: space-between;
+  padding-top: 112px;
+  padding-bottom: 117px;
   position: relative;
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
+
+// .hero__content {
+//   @media screen and (min-width: 768px) {
+//     width: 547px;
+//   }
+// }
 
 .hero__subtitle {
   margin-bottom: 24px;
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;
   color: $accent-second-color;
+  @media screen and (min-width: 480px) {
+    font-size: 20px;
+  }
 }
 
 .hero__title {
-  width: 545px;
+  max-width: 100%;
   margin-bottom: 30px;
   font-family: $font-family-title, serif;
   font-weight: 700;
-  font-size: 84px;
+  font-size: 50px;
   line-height: 1.06;
   letter-spacing: -0.04em;
   color: $hero-text-color;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    font-size: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    font-size: 72px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 545px;
+    font-size: 84px;
+  }
 }
 
 .hero-bg {
   position: absolute;
-  top: -104px;
+  top: -263px;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -10;
   background-repeat: no-repeat;
-  background-image: url('../images/hero-decore.png');
+  background-image: url('../images/decore-hero-ellipce.png');
+
+  @media screen and (min-width: 768px) {
+    top: -185px;
+    background-image: url('../images/hero-decore.png');
+  }
 }
 
 .hero__text {
-  width: 477px;
+  max-width: 100%;
   margin-bottom: 34px;
   font-weight: 500;
   line-height: 1.88;
-}
-
-.hero__content {
-  padding-top: 112px;
-  padding-bottom: 117px;
-  width: 547px;
+  @media screen and (min-width: 480px) {
+    width: 477px;
+  }
 }
 
 .hero__btn {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+
+  @media screen and (min-width: 480px) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1024px) {
+    gap: 44px;
+  }
 }
 
 .hero__btn--find {
   padding: 19px 26px;
-  margin-right: 44px;
   font-family: $font-family-btn, sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -72,6 +114,12 @@
   :focus {
     background-color: $accent-second-color;
   }
+}
+
+.hero__btn-mobile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .hero__btn--demo {
@@ -110,55 +158,78 @@
 .wrapper-img {
   position: relative;
   width: 784px;
-  height: 764px;
+  // height: 764px;
+  display: none;
+
+  @media screen and (min-width: 1024px) {
+    display: block;
+  }
 }
 
 .hero__img {
   position: absolute;
   top: 0;
-  right: 15px;
-  width: 784px;
-  height: 764px;
+  left: -130px;
+  width: 500px;
+  height: 500px;
+
+  @media screen and (min-width: 1440px) {
+    position: absolute;
+    top: -112px;
+    left: -100px;
+    width: 784px;
+    height: 764px;
+  }
 }
 
 .hero__icon-plane {
   position: absolute;
 
   &:nth-of-type(1) {
-    top: 50px;
-    left: -80px;
+    top: -50px;
+    left: -50px;
+    @media screen and (min-width: 1024px) and (max-width: 1439px) {
+      top: -100px;
+      left: -100px;
+    }
 
-    &:hover {
-      animation-name: movePlane;
-      animation-duration: 3000ms;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
+    @media screen and (min-width: 1440px) {
+      &:hover {
+        animation-name: movePlane;
+        animation-duration: 3000ms;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
     }
   }
 
   &:nth-of-type(2) {
-    top: 110px;
-    right: -60px;
-    z-index: -1;
+    display: none;
+    @media screen and (min-width: 1024px) {
+      display: block;
+      top: 0px;
+      right: -100px;
+      z-index: -1;
+    }
   }
 }
 
 @keyframes movePlane {
   0% {
-    top: 50px;
+    top: -50px;
     left: -80px;
   }
   10% {
-    top: 50px;
+    top: -50px;
     left: -85px;
   }
   30% {
-    top: 10px;
+    top: -70px;
     left: 20px;
   }
   50% {
-    top: -30px;
+    top: -80px;
     left: 100px;
   }
   100% {

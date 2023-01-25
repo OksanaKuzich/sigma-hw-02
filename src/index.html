@@ -41,12 +41,14 @@
             <li class="header__nav-item"><a href="">Bookings</a></li>
           </ul>
         </nav>
-        <button class="header__btn--login" type="button">Login</button>
-        <button class="header__btn--singup" type="button">Sign up</button>
-        <select class="header__select--lang" name="language">
-          <option value="EN">EN</option>
-          <option value="UA">UA</option>
-        </select>
+        <div class="header__btn-wrapper">
+          <button class="header__btn--login" type="button">Login</button>
+          <button class="header__btn--singup" type="button">Sign up</button>
+          <select class="header__select--lang" name="language">
+            <option value="EN">EN</option>
+            <option value="UA">UA</option>
+          </select>
+        </div>
       </div>
     </header>
     <main>
@@ -66,12 +68,14 @@
               <button class="hero__btn--find" type="button">
                 Find out more
               </button>
-              <button class="hero__btn--demo" type="button">
-                <svg class="hero__icon-play">
-                  <use href="./images/sprite.svg#icon-play"></use>
-                </svg>
-              </button>
-              <p class="hero--demo-text">Play Demo</p>
+              <div class="hero__btn-mobile">
+                <button class="hero__btn--demo" type="button">
+                  <svg class="hero__icon-play">
+                    <use href="./images/sprite.svg#icon-play"></use>
+                  </svg>
+                </button>
+                <p class="hero--demo-text">Play Demo</p>
+              </div>
             </div>
           </div>
           <div class="wrapper-img">
