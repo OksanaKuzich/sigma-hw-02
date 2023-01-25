@@ -23,6 +23,11 @@
       type="text/css"
     />
     <link rel="stylesheet" href="./sass/main.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
     <title>Jadoo</title>
   </head>
   <body>
@@ -35,10 +40,12 @@
         </a>
         <nav class="header__nav">
           <ul class="header__nav-list">
-            <li class="header__nav-item"><a href="">Desitnations</a></li>
-            <li class="header__nav-item"><a href="">Hotels</a></li>
-            <li class="header__nav-item"><a href="">Flights</a></li>
-            <li class="header__nav-item"><a href="">Bookings</a></li>
+            <li class="header__nav-item">
+              <a href="#destinations">Desitnations</a>
+            </li>
+            <li class="header__nav-item"><a href="#steps">Hotels</a></li>
+            <li class="header__nav-item"><a href="#services">Flights</a></li>
+            <li class="header__nav-item"><a href="#subscribe">Bookings</a></li>
           </ul>
         </nav>
         <div class="header__btn-wrapper">
@@ -52,7 +59,7 @@
       </div>
     </header>
     <main>
-      <section>
+      <section id="home">
         <div class="container hero">
           <div class="hero__content">
             <p class="hero__subtitle">Best Destinations around the world</p>
@@ -91,7 +98,7 @@
           <div class="hero-bg"></div>
         </div>
       </section>
-      <section>
+      <section id="services">
         <div class="container services">
           <p class="services__subtitle">CATEGORY</p>
           <h2 class="services__title">We Offer Best Services</h2>
@@ -167,7 +174,7 @@
           </svg>
         </div>
       </section>
-      <section>
+      <section id="destinations">
         <div class="container destinations">
           <p class="services__subtitle">Top Selling</p>
           <h2 class="services__title">Top Destinations</h2>
@@ -234,7 +241,7 @@
           />
         </div>
       </section>
-      <section>
+      <section id="steps">
         <div class="container steps">
           <div>
             <p class="services__subtitle">Easy and Fast</p>
@@ -348,7 +355,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="feedback">
         <div class="container feedback">
           <div>
             <p class="feedback__subtitle">Testimonials</p>
@@ -370,7 +377,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="partners">
         <div class="container partners">
           <h2 class="visually-hidden">Our partners</h2>
           <ul class="partners__list">
@@ -412,7 +419,7 @@
           </ul>
         </div>
       </section>
-      <section>
+      <section id="subscribe">
         <div class="container subscribe">
           <h2 class="visually-hidden">Subscribe</h2>
           <form class="subscribe__form">

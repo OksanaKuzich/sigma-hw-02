@@ -1426,7 +1426,7 @@ button {
 }
 .footer__menu-el:hover {
   transform: scale(1.1);
-  color: #181e4b;
+  color: #f1a501;
 }
 
 .footer__menu--group-icon {
