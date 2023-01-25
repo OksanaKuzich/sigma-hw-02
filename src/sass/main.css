@@ -41,7 +41,6 @@ button {
 }
 
 .container {
-  outline: 1px solid red;
   max-width: 1440px;
   padding-left: 25px;
   padding-right: 10px;
@@ -92,6 +91,8 @@ button {
 @media screen and (max-width: 1440px) {
   .header {
     gap: 25px;
+    padding-top: 47px;
+    padding-bottom: 18px;
   }
 }
 
@@ -101,7 +102,7 @@ button {
 @media screen and (min-width: 1440px) {
   .header__link-logo {
     margin-right: 222px;
-    width: 116px;
+    width: 115px;
   }
 }
 
@@ -402,20 +403,6 @@ button {
     left: -50px;
   }
 }
-@media screen and (min-width: 1440px) {
-  .hero__icon-plane:nth-of-type(1):hover {
-    -webkit-animation-name: movePlane;
-            animation-name: movePlane;
-    -webkit-animation-duration: 3000ms;
-            animation-duration: 3000ms;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-            animation-direction: alternate;
-  }
-}
 .hero__icon-plane:nth-of-type(2) {
   display: none;
 }
@@ -428,6 +415,28 @@ button {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .hero__icon-plane--hover {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 300px;
+    height: 150px;
+    z-index: 10;
+  }
+  .hero__icon-plane--hover:hover + .active {
+    -webkit-animation-name: movePlane;
+            animation-name: movePlane;
+    -webkit-animation-duration: 3000ms;
+            animation-duration: 3000ms;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+  }
+}
 @-webkit-keyframes movePlane {
   0% {
     top: -50px;
@@ -442,7 +451,6 @@ button {
     left: 400px;
   }
 }
-
 @keyframes movePlane {
   0% {
     top: -50px;
@@ -465,7 +473,7 @@ button {
 }
 @media screen and (min-width: 1024px) {
   .services {
-    padding: 105px 155px 156px 110px;
+    padding: 110px 155px 156px 110px;
   }
 }
 
@@ -618,8 +626,8 @@ button {
   .services__decore-plus {
     position: absolute;
     display: block;
-    top: 105px;
-    right: 0;
+    top: 85px;
+    right: -12px;
     z-index: -1;
   }
 }
@@ -828,6 +836,8 @@ button {
 
 .steps__card {
   margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 20px 24px 31px 25px;
   max-width: 370px;
   background: #fff;
@@ -1156,7 +1166,7 @@ button {
 }
 @media screen and (min-width: 1440px) {
   .subscribe {
-    padding: 124px 135px 83px 135px;
+    padding: 124px 135px 70px 135px;
   }
 }
 
@@ -1363,7 +1373,7 @@ button {
 .footer__link-logo {
   display: block;
   width: 152px;
-  margin-bottom: 37px;
+  margin-bottom: 34px;
 }
 
 .footer__logo {
