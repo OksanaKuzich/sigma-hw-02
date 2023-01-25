@@ -5,7 +5,7 @@
   "homepage": "https://oksanakuzich.github.io/sigma-hw-02/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /sigma-hw-02/"
   },
   "repository": {
     "type": "git",
