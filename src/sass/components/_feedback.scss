@@ -1,7 +1,17 @@
 .feedback {
-  padding: 0 217px 173px 186px;
+  padding-bottom: 100px;
   display: flex;
-  gap: 124px;
+  flex-wrap: wrap;
+  gap: 70px;
+
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    // gap: 30px;
+    // flex-wrap: nowrap;
+  }
+  @media screen and (min-width: 1440px) {
+    gap: 124px;
+    padding: 0 217px 173px 186px;
+  }
 }
 
 .feedback__subtitle {
@@ -13,7 +23,7 @@
 }
 
 .feedback__title {
-  width: 409px;
+  max-width: 409px;
   font-family: $font-family-title, serif;
   font-weight: 700;
   font-size: 50px;
@@ -38,11 +48,15 @@
 
 .feedback__card-img {
   position: absolute;
-  top: -34px;
-  left: -34px;
+  top: -40px;
+  left: 0;
   width: 68px;
   height: 68px;
   border-radius: 50%;
+  @media screen and (min-width: 480px) {
+    top: -34px;
+    left: -34px;
+  }
 }
 
 .feedback__card-context {

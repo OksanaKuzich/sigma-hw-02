@@ -1,8 +1,18 @@
 .steps {
   display: flex;
-  gap: 118px;
-  padding-bottom: 200px;
-  padding-left: 186px;
+  // gap: 118px;
+  padding-bottom: 100px;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    gap: 30px;
+    flex-wrap: nowrap;
+  }
+  @media screen and (min-width: 1440px) {
+    gap: 118px;
+    padding-bottom: 200px;
+    padding-left: 186px;
+  }
 }
 
 .steps .services__subtitle {
@@ -12,8 +22,13 @@
 
 .steps .services__title {
   margin-bottom: 31px;
-  width: 511px;
+  max-width: 511px;
   text-transform: capitalize;
+  font-size: 50px;
+
+  @media screen and (min-width: 1024px) {
+    width: 545px;
+  }
 }
 
 .steps__item {
@@ -33,7 +48,7 @@
 
 .steps__item-text {
   line-height: 1.24;
-  width: 327px;
+  max-width: 327px;
 }
 
 .steps__icon {
@@ -47,11 +62,9 @@
 }
 
 .steps__card {
-  position: absolute;
-  bottom: 14px;
-  left: 0;
+  margin-top: 50px;
   padding: 20px 24px 31px 25px;
-  width: 370px;
+  max-width: 370px;
   background: $background-color;
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
     0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
@@ -60,9 +73,17 @@
     0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
     0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
   border-radius: 26px;
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 0;
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+  }
 }
 
 .steps__card-img {
+  width: 100%;
   margin-bottom: 26px;
   border: 1px solid #000000;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -85,6 +106,7 @@
   line-height: 1.24;
   letter-spacing: -0.005em;
   color: $second-color-subtitle;
+  flex-wrap: wrap;
 }
 
 .steps__decore-line {
@@ -130,22 +152,27 @@
 }
 
 .steps__small-card {
-  position: absolute;
-  bottom: 66px;
-  right: -5px;
-  display: flex;
-  gap: 11px;
-  width: 263px;
-  padding: 18px 25px 22px 20px;
-  background: #ffffff;
-  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
-    0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
-    0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
-    0px 20px 13px rgba(0, 0, 0, 0.01),
-    0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
-    0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
-  border-radius: 18px;
-  z-index: 2;
+  display: none;
+
+  @media screen and (min-width: 1440px) {
+    display: block;
+    position: absolute;
+    bottom: 66px;
+    right: -5px;
+    display: flex;
+    gap: 11px;
+    width: 263px;
+    padding: 18px 25px 22px 20px;
+    background: #ffffff;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+      0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+      0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+      0px 20px 13px rgba(0, 0, 0, 0.01),
+      0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+      0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 18px;
+    z-index: 2;
+  }
 }
 
 .steps__small-card-img {
